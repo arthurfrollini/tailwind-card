@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #inputArquivo {
+        display: none;
+      }
+      svg,
+      #add:hover {
+        display: block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-400">
+    <div class="flex justify-center">
+      <!-- Div que centraliza-->
+      <div
+        class="flex-grow bg-white mt-24 max-w-xs sm:max-w-sm lg:max-w-3xl shadow-xl rounded-md border border-gray-300"
+      >
+        <!--Div do Topo Container-->
+        <div class="">
+          <!--Div do título do topo-->
+        </div>
+        <!-- Div container abaixo do topo com o formulário-->
+        <div class="flex m-4 justify-center">
+          <div class="">
+            <form class="w-full max-w-lg">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="bg-white w-full pl-4 rounded-md pt-4 pb-4">
+                  <h1 class="text-2xl text-gray-700 font-semibold">
+                    Preencha os seus dados
+                  </h1>
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-first-name"
+                    type="text"
+                    placeholder="Nome"
+                  />
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-last-name"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-last-name"
+                    type="text"
+                    placeholder="Sobrenome"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-3">
+                <div class="w-full px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-password"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-password"
+                    type="password"
+                    placeholder="******************"
+                  />
+                  <p class="text-gray-600 text-xs italic"></p>
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
+                    for="grid-city"
+                  >
+                    Cidade
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-city"
+                    type="text"
+                    placeholder="Ex:. São Paulo"
+                  />
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
+                    for="grid-state"
+                  >
+                    Estado
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-state"
+                    >
+                      <option>AC</option>
+                      <option>AL</option>
+                      <option>AP</option>
+                      <option>AM</option>
+                      <option>BA</option>
+                      <option>CE</option>
+                      <option>DF</option>
+                      <option>ES</option>
+                      <option>GO</option>
+                      <option>MA</option>
+                      <option>MT</option>
+                      <option>MS</option>
+                      <option>MG</option>
+                      <option>PA</option>
+                      <option>PB</option>
+                      <option>PR</option>
+                      <option>PE</option>
+                      <option>PI</option>
+                      <option>RJ</option>
+                      <option>RN</option>
+                      <option>RS</option>
+                      <option>RO</option>
+                      <option>RR</option>
+                      <option>SC</option>
+                      <option>SP</option>
+                      <option>SE</option>
+                      <option>TO</option>
+                    </select>
+                    <div
+                      class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                    >
+                      <svg
+                        class="fill-current h-4 w-4"
+                        id="add"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2"
+                    for="grid-zip"
+                  >
+                    CEP
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-zip"
+                    type="text"
+                    placeholder="99999-999"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mt-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-occupation"
+                    type="text"
+                    placeholder="Profissão"
+                  />
+                </div>
+                <div class="w-full md:w-1/2 mt-3 px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-last-name"
+                  >
+                  </label>
+                  <div class="botaoArquivo w-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current text-teal-500 inline-block h-12 w-12"
+                      viewBox="0 0 22 22"
+                    >
+                      <path
+                        d="M19 7v2.99s-1.99.01-2 0V7h-3s.01-1.99 0-2h3V2h2v3h3v2h-3zm-3 4V8h-3V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8h-3zM5 19l3-4 2 3 3-4 4 5H5z"
+                      />
+                      <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                  </div>
+                  <input type="file" id="inputArquivo" />
+                </div>
+              </div>
+              <div class="">
+                <label class="md:w-2/3 text-gray-500">
+                  <input class="leading-tight" type="checkbox" />
+                  <span class="text-xs">
+                    Aceito os Termos e condições e autorizo o uso de meus dados
+                    de acordo com a declaração de privacidade!
+                  </span>
+                </label>
+              </div>
+            </form>
+            <div class="w-full max-w-sm">
+              <div class="flex items-center mt-4 py-2">
+                <button
+                  class="flex-shrink-0 focus:outline-none bg-teal-500 hover:bg-teal-600 text-base border-teal-500 rounded-md hover:border-teal-600 border-4 font-semibold text-white py-2 px-4 rounded"
+                  type="button"
+                >
+                  Cadastre-se
+                </button>
+                <button
+                  class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-600 py-2 text-base px-4 font-semibold focus:outline-none"
+                  type="button"
+                >
+                  Cancelar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var div = document.getElementsByClassName('botaoArquivo')[0];
+      var input = document.getElementById('inputArquivo');
+
+      div.addEventListener('click', function () {
+        input.click();
+      });
+      input.addEventListener('change', function () {
+        var nome = 'Não há arquivo selecionado. Selecionar arquivo...';
+        if (input.files.length > 0) {
+          nome = input.files[0].name;
+          div.innerHTML = nome;
+        }
+      });
+    </script>
+  </body>
+</html>
